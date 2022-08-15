@@ -20,8 +20,8 @@ public class Scanner{
     private int cont = 0;
     private int i;
     private int aux =0;
-    private int colunas = 0;
-    private int linhas = 1;
+    public int colunas = 0;
+    public int linhas = 1;
     private int tam;
     private int k;
     private int v=0;   
