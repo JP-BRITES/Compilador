@@ -18,7 +18,7 @@ public class Analisadorlexico {
                novo.scan();
                 car = novo.proximo();
                
-                  
+                  //joao paulo é pica
        }
 }
 }
