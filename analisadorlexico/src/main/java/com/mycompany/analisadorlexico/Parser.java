@@ -24,7 +24,7 @@ public class Parser {
             
         }
         else{
-            //sintaxError(expectedToken);
+            sintaxError(expectedToken);
             System.out.println("ERROR");
         }
         
@@ -42,5 +42,11 @@ public class Parser {
         currentToken = temp;
         
     }
+    //PARTE DE JP
+    
+    private void parseExpressao() throws ParserException {
+        
+    }
+    
     
 }
