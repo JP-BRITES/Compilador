@@ -1,3 +1,4 @@
 com\mycompany\analisadorlexico\Scanner.class
 com\mycompany\analisadorlexico\Token.class
+com\mycompany\analisadorlexico\ParserException.class
 com\mycompany\analisadorlexico\Analisadorlexico.class
