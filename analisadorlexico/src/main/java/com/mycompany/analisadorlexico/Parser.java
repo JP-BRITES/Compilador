@@ -191,7 +191,7 @@ public class Parser {
         private void parseIntLit() throws ParserException { //**
         accept(Token.INTLITERAL); 
     }
-        private void parseIterativo() throws ParserException {
+        private void parseIterativo() throws ParserException { //**
         accept(Token.WHILE);
         parseExpressao();
         accept(Token.DO);
