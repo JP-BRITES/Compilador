@@ -125,7 +125,7 @@ public class Parser {
         parseFator();
         while(currentToken.kind == Token.MUL || currentToken.kind == Token.DIV || currentToken.kind == Token.AND) {
             parseopMul();
-            parseFactor();
+            parseFator();
         }
     }
     
