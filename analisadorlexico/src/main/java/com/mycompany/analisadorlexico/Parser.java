@@ -178,7 +178,7 @@ public class Parser {
                 break;
     }
 }
-     private void parseFloatLit() throws ParserException { //**
+     private void parseFloatLit() throws ParserException { 
         accept(Token.REAL);
      
      }
@@ -188,13 +188,36 @@ public class Parser {
             acceptIt();
         }
     }
-        private void parseIntLit() throws ParserException { //**
+        private void parseIntLit() throws ParserException { 
         accept(Token.INTLITERAL); 
     }
-        private void parseIterativo() throws ParserException { //**
+        private void parseIterativo() throws ParserException { 
         accept(Token.WHILE);
         parseExpressao();
         accept(Token.DO);
         parseComando();
     }
+        private void parseLetra() throws ParserException { //PRECISA???
+}
+        private void parseListaDeComandos() throws ParserException { 
+        while(currentToken.kind == Token.IF ||
+            currentToken.kind == Token.WHILE ||
+            currentToken.kind == Token.BEGIN ||
+            currentToken.kind == Token.IDENTIFIER)
+        {
+        parseComando(); 
+        accept(Token.SEMICOLON);
+        }
+    }
+        private void parseListaDeIds(){ 
+        parseId();
+        while (currentToken.kind == Token.VIRG)
+        {   
+            acceptIt();
+            parseId();
+           
+        }
+
+    }
+        
 }
